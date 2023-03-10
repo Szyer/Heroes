@@ -1,0 +1,9 @@
+<ul>
+     <li *ngFor="let hero of hero$ | async">
+       <a [routerLink]="['/hero',hero.id]">
+         <span class="badge">{{ hero.id }}</span>{{ hero.name }}
+       </a>
+     </li>
+   </ul>
+   <button type="button" routerLink="/sidekicks">Go to sidekicks</button>
+   

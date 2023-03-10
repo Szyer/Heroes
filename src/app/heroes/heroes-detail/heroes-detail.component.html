@@ -1,0 +1,6 @@
+<div *ngIf="hero | async as heroes">
+    <div *ngFor="let hero of heroes">
+      <h3>{{ hero.name }}</h3>
+      <p>Id: {{ hero.id }}</p> 
+      <label for="hero-name">Hero name: {{hero.name}}</label>
+  
